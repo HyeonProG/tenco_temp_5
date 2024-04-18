@@ -40,17 +40,17 @@ public class Thief {
 	// 도적이 전사를 공격함
 	public void attackWarrior(Warrior w) {
 		w.beAttacked(this.power);
-		System.out.println(this.name + "이 " + w.getName +"를 공격했습니다.");
+		System.out.println(this.name + "이 " + w.getName() +"를 공격했습니다.");
 	}
 	// 도적이 마법사를 공격함
 	public void attackWizard(Wizard w) {
 		w.beAttacked(this.power);
-		System.out.println(this.name + "이 " + w.getName +"를 공격했습니다.");
+		System.out.println(this.name + "이 " + w.getName() +"를 공격했습니다.");
 	}
 	// 도적이 궁수를 공격함
 	public void attackArcher(Archer a) {
 		a.beAttacked(this.power);
-		System.out.println(this.name + "이 " + a.getName +"를 공격했습니다.");
+		System.out.println(this.name + "이 " + a.getName() +"를 공격했습니다.");
 	}
 	
 	// 도적이 공격받음

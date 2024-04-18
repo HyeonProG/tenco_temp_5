@@ -1,4 +1,4 @@
-package fantazy;
+package fantasy;
 
 public class Wizard {
 	// Wizard 클래스 변수 설정
@@ -10,7 +10,7 @@ public class Wizard {
 	public void attackWarrior(Warrior warrior) {
 		int a = warrior.getHealth();
 		if (warrior.health <= 0) {
-			System.out.println(warrior.getName + "가 사망했습니다.");
+			System.out.println(warrior.getName() + "가 사망했습니다.");
 			warrior.setHealth(0);
 			return;
 		}
@@ -21,7 +21,7 @@ public class Wizard {
 	public void attackThief(Thief thief) {
 		int a = thief.getHealth();
 		if (a <= 0) {
-			System.out.println(thief.getName + "가 사망했습니다.");
+			System.out.println(thief.getName() + "가 사망했습니다.");
 			thief.setHealth(0);
 			return;
 		}
@@ -32,7 +32,7 @@ public class Wizard {
 	public void attackArcher(Archer archer) {
 		int a = archer.getHealth();
 		if (a <= 0) {
-			System.out.println(archer.getName + "가 사망했습니다.");
+			System.out.println(archer.getName() + "가 사망했습니다.");
 			archer.setHealth(0);
 			return;
 		}

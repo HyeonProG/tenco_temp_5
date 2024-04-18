@@ -1,12 +1,12 @@
 package fantasy;
 
-public class Archor {
+public class Archer {
 	// 속성
 	private String name; // 이름
 	private int health; // 체력
 	private int power; // 공격력
 	
-	public Archor(String name) {
+	public Archer(String name) {
 		this.name = name;
 		health = 100;
 		power = 10;
@@ -24,7 +24,7 @@ public class Archor {
 		return health;
 	}
 	
-	public void setHp(int health) {
+	public void setHealth(int health) {
 		this.health = health;
 	}
 	
@@ -43,9 +43,9 @@ public class Archor {
 	}
 	
 	// 궁수가 마법사를 공격합니다.
-	public void attackMagician(Magician magician) {
-		System.out.println(this.name + " 이 " + magician.getName() + " 을 공격합니다.");
-		magician.beAttacked(this.power);
+	public void attackMagician(Wizard wizard) {
+		System.out.println(this.name + " 이 " + wizard.getName() + " 을 공격합니다.");
+		wizard.beAttacked(this.power);
 	}
 	
 	// 궁수가 도적을 공격합니다.
