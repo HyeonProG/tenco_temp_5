@@ -58,7 +58,7 @@ public class Wizard {
 	}
 
 	// 마법사가 공격받음
-	public void beAttecked(int power) {
+	public void beAttacked(int power) {
 		if (health <= 0) {
 			System.out.println("이미 죽었습니다.");
 		}
