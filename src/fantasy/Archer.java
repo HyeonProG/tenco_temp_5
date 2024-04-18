@@ -43,7 +43,7 @@ public class Archer {
 	}
 
 	// 궁수가 마법사를 공격합니다.
-	public void attackMagician(Wizard wizard) {
+	public void attackWizard(Wizard wizard) {
 		System.out.println(this.name + " 이 " + wizard.getName() + " 을 공격했습니다.");
 		wizard.beAttacked(this.power);
 	}
