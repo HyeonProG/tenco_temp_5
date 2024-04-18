@@ -60,3 +60,4 @@ public class Warrior {
 		this.name = inputPower;
 	}
 }
+
