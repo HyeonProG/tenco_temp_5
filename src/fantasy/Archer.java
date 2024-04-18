@@ -43,9 +43,13 @@ public class Archer {
 	}
 
 	// 궁수가 마법사를 공격합니다.
+<<<<<<< HEAD
 
 	public void attackWizard(Wizard wizard) {
 
+=======
+	public void attackWizard(Wizard wizard) {
+>>>>>>> a8fc8ac4593a23a361072709cfc4007ddf298b79
 		System.out.println(this.name + " 이 " + wizard.getName() + " 을 공격했습니다.");
 		wizard.beAttacked(this.power);
 	}
