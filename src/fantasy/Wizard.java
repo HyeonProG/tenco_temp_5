@@ -41,30 +41,31 @@ public class Wizard {
 
 	// 마법사가 전사를 공격함
 	public void attackWarrior(Warrior warrior) {
-		System.out.println(this.name+"가 "+warrior.getName()+"을 공격합니다.");
+		System.out.println(this.name+"이 "+warrior.getName()+"를 공격했습니다.");
 		warrior.beAttacked(this.power);
 	}
 
 	// 마법사가 도적을 공격함
 	public void attackThief(Thief thief) {
-		System.out.println(this.name+"가 "+thief.getName()+"을 공격합니다.");
+		System.out.println(this.name+"이 "+thief.getName()+"를 공격했습니다.");
 		thief.beAttacked(this.power);
 	}
 
 	// 마법사가 궁수를 공격함
 	public void attackArcher(Archer archer) {
-		System.out.println(this.name+"가 "+archer.getName()+"을 공격합니다.");
+		System.out.println(this.name+"이 "+archer.getName()+"를 공격했습니다.");
 		archer.beAttacked(this.power);
 	}
 
-	// 공격 받을 때
+	// 마법사가 공격받음
 	public void beAttecked(int power) {
-		if (health < power) {
-			System.out.println("전투에서 승리했습니다.");
-			this.health = 0;
-			return;
+		if (health <= 0) {
+			System.out.println("이미 죽었습니다.");
 		}
-		this.power -= power;
+		health -= power;
+		if (health < 0) {
+			health=0;
+		}
 	}
 
 
