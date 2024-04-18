@@ -15,17 +15,17 @@ public class Warrior {
 	// 전사가 마법사를 공격함
 	public void attackWizard(Wizard wizard) {
 		System.out.println(this.name + " 이 " + wizard.getName() + "을 공격합니다");
-		w.beAttacked(this.power);
+		wizard.beAttacked(this.power);
 	}
 	// 전사가 도적을 공격함
 	public void attackThief(Thief thief) {
 		System.out.println(this.name + " 이 " + thief.getName() + "을 공격합니다");
-		t.beAttacked(this.power);
+		thief.beAttacked(this.power);
 	}
 	// 전사가 궁수를 공격함
 	public void attackArcher(Archer archer) {
 		System.out.println(this.name + " 이 " + archer.getName() + "을 공격합니다");
-		a.beAttacked(this.power);
+		archer.beAttacked(this.power);
 	}
 	// 전사가 공격당
 	public void beAttacked(int power) {
