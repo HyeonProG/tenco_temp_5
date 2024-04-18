@@ -14,20 +14,20 @@ public class Warrior {
 	}
 	// 전사가 마법사를 공격함
 	public void attackWizard(Wizard wizard) {
-		System.out.println(this.name + " 이 " + wizard.getName() + "을 공격합니다");
+		System.out.println(this.name + " 이 " + wizard.getName() + "를 공격합니다");
 		wizard.beAttacked(this.power);
 	}
 	// 전사가 도적을 공격함
 	public void attackThief(Thief thief) {
-		System.out.println(this.name + " 이 " + thief.getName() + "을 공격합니다");
+		System.out.println(this.name + " 이 " + thief.getName() + "를 공격합니다");
 		thief.beAttacked(this.power);
 	}
 	// 전사가 궁수를 공격함
 	public void attackArcher(Archer archer) {
-		System.out.println(this.name + " 이 " + archer.getName() + "을 공격합니다");
+		System.out.println(this.name + " 이 " + archer.getName() + "를 공격합니다");
 		archer.beAttacked(this.power);
 	}
-	// 전사가 공격당
+	// 전사가 공격당함
 	public void beAttacked(int power) {
 		if (health <= 0) {
 			System.out.println("이미 사망하였습니다.");
