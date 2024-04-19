@@ -80,7 +80,7 @@ public class TestThief {
 				break;
 			}
 		}
-
+		sc.close();
 	}
 
 }
